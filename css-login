@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title> FARMER FRIEND </title>
+    <style>
+    
+    body {font-family: Century Gothic, Helvetica, sans-serif;}
+    * {box-sizing: border-box;}
+	h1 {
+    	color: #b19ce9;
+    }
+    button {
+        background-color: #b19fe9;
+        color: white;
+        padding: 15px 20px;
+        border: none;
+        cursor: pointer;
+        width: 150px;
+        opacity: 0.9;
+        border-radius: 5px;
+		justify-content: center;
+        position:relative; 
+        margin: -20px -80px;
+        top:50%;
+        left:40%;
+    }
+
+    button:hover {
+        opacity: 1;
+    }
+    
+    .input-field {
+      width: 400px;
+      padding: 10px;
+      outline: none;
+      background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+    
+    }
+    
+    .container {
+      display: flex;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+
+    .icon {
+      padding: 10px;
+      background: white;
+      color: grey;
+      min-width: 50px;
+      text-align: center;
+    }
+    
+    in-container{
+        padding: 16px;
+    }
+    
+    span.psw {
+      float: right;
+      padding-top: 12px;
+    }
+    
+    .cancelbtn {
+      border-radius: 25px;
+      width: auto;
+      padding: 10px 18px;
+      background-color: #b19ce9;
+      text-align: center;
+      margin: -20px -200px;
+    }
+    
+    </style>
+</head>
+<body>
+
+    <form action="index.php" method="post" style="max-width:500px;margin:auto">
+    	<br>
+        <h1 align="center"> LOGIN </h1>  
+        <br><br>
+        <div class="container">
+        <i class="fa fa-user icon"></i>
+        <input class="input-field" type="text" placeholder="Username" id="username" name="username" required>
+        <br><br>
+        </div>
+        <br>
+        <div class="container">
+        <br><br>
+        <i class="fa fa-key icon"></i>
+        <input class="input-field" type="password" placeholder="Password" id="password" name="password" required>
+        <br><br>
+        </div>
+		<br><br>
+        <button type="submit" name = "login_user">Log In</button>
+        <br><br><br>
+        <div class="in-container" style="background-color:#ffffff">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+    </form>
+</body>
+</html>
